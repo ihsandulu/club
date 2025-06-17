@@ -1,0 +1,26 @@
+<?php
+
+namespace App\Controllers\Transaction;
+
+
+use App\Controllers\BaseController;
+
+class Pay extends BaseController
+{
+
+    protected $sesi_mbti;
+    public function __construct()
+    {
+        $sesi_mbti = new \App\Models\Global_m();
+        $sesi_mbti->ceksesi();
+    }
+
+
+    public function index()
+    {
+        $data = new \App\Models\Transaction\pay_m();
+        $data = $data->data();
+        $data["title"]="Pembayaran";
+        return view('Transaction/pay_v', $data);
+    }
+}

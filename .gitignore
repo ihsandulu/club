@@ -1,0 +1,41 @@
+# Composer dependencies (jangan track vendor)
+vendor/
+
+# File konfigurasi lokal
+.env
+.env.*
+
+# Cache dan logs
+writable/cache/
+writable/logs/
+writable/session/
+writable/debugbar/
+
+# File upload lokal (jika ada)
+writable/uploads/
+public/uploads/
+
+# File editor/IDE
+*.sublime-project
+*.sublime-workspace
+*.vscode/
+*.idea/
+.DS_Store
+Thumbs.db
+
+# File OS
+ehthumbs.db
+Icon?
+desktop.ini
+
+# Backup
+*.bak
+*.tmp
+
+# PHPUnit hasil testing
+.phpunit.result.cache
+coverage/
+
+# Build file (jika pakai tools JS modern)
+node_modules/
+dist/
