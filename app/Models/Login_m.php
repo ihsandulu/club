@@ -39,7 +39,7 @@ class Login_m extends Core_m
         $data["schools_nname"] = "Club";
         $data["schools_tagline"] = "Kelola Klub, Tanpa Repot.";
         $data["schools_logo"] = base_url("images/identity_picture/" . $identity->identity_picture);
-        if ((isset($_GET["schools_nname"]) && $_GET["schools_nname"] != "") || ($countpart > 0)) {
+        if ((isset($_GET["schools_nname"]) && $_GET["schools_nname"] != "") || ($countpart > 0 && $parts[0]!= "club")) {
             if (isset($_GET["schools_nname"]) && $_GET["schools_nname"] != "") {
                 $ischools_nname = $_GET["schools_nname"];
             }
