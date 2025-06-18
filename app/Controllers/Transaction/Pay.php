@@ -18,7 +18,7 @@ class Pay extends BaseController
 
     public function index()
     {
-        $data = new \App\Models\Transaction\pay_m();
+        $data = new \App\Models\Transaction\Pay_m();
         $data = $data->data();
         $data["title"]="Pembayaran";
         return view('Transaction/pay_v', $data);

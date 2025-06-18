@@ -18,7 +18,7 @@ class Ujiand extends BaseController
 
     public function index()
     {
-        $data = new \App\Models\Transaction\ujiand_m();
+        $data = new \App\Models\Transaction\Ujiand_m();
         $data = $data->data();
         $data["title"]="Poin Penilaian";
         return view('Transaction/ujiand_v', $data);

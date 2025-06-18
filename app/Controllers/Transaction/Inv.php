@@ -18,7 +18,7 @@ class Inv extends BaseController
 
     public function index()
     {
-        $data = new \App\Models\Transaction\inv_m();
+        $data = new \App\Models\Transaction\Inv_m();
         $data = $data->data();
         $data["title"]="Peinvan";
         return view('Transaction/inv_v', $data);

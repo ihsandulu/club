@@ -4,7 +4,7 @@ namespace App\Models\Transactionm;
 
 use App\Models\Core_m;
 
-class pay_m extends Core_m
+class Pay_m extends Core_m
 {
     public function data()
     {

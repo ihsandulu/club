@@ -18,7 +18,7 @@ class Tagihan extends BaseController
 
     public function index()
     {
-        $data = new \App\Models\Transaction\tagihan_m();
+        $data = new \App\Models\Transaction\Tagihan_m();
         $data = $data->data();
         $data["title"]="Tagihan";
         return view('Transaction/tagihan_v', $data);

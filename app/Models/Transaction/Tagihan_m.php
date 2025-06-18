@@ -2,9 +2,9 @@
 
 namespace App\Models\transaction;
 
-use App\Models\core_m;
+use App\Models\Core_m;
 
-class tagihan_m extends core_m
+class Tagihan_m extends Core_m
 {
     public function data()
     {

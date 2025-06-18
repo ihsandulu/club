@@ -2,9 +2,9 @@
 
 namespace App\Models\master;
 
-use App\Models\core_m;
+use App\Models\Core_m;
 
-class mpassword_m extends core_m
+class Mpassword_m extends Core_m
 {
     public function data()
     {

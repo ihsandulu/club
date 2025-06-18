@@ -18,7 +18,7 @@ class Mpassword extends BaseController
 
     public function index()
     {
-        $data = new \App\Models\master\mpassword_m();
+        $data = new \App\Models\master\Mpassword_m();
         $data = $data->data();
         return view('master/mpassword_v', $data);
     }

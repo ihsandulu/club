@@ -18,7 +18,7 @@ class Nilai extends BaseController
 
     public function index()
     {
-        $data = new \App\Models\Transaction\nilai_m();
+        $data = new \App\Models\Transaction\Nilai_m();
         $data = $data->data();
         $data["title"]="Penilaian";
         return view('Transaction/nilai_v', $data);

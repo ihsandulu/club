@@ -2,9 +2,9 @@
 
 namespace App\Models\transaction;
 
-use App\Models\core_m;
+use App\Models\Core_m;
 
-class ujiand_m extends core_m
+class Ujiand_m extends Core_m
 {
     public function data()
     {
