@@ -297,7 +297,9 @@ $identity = $this->db->table("identity")->get()->getRow();
                         $url = base_url('login?schools_nname=' . $_GET["schools_nname"]);
                     } else {
                         $url = base_url('login');
-                    } ?>
+                    } 
+                    echo $url;
+                    ?>
                     <form action="<?= $url; ?>" method="POST" class="login100-form validate-form p-l-55 p-r-55 p-t-178">
                         <span class="login100-form-title">
                             <!-- LP2K<br />
