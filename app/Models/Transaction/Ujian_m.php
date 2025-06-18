@@ -2,7 +2,7 @@
 
 namespace App\Models\transaction;
 
-use App\Models\core_m;
+use App\Models\Core_m;
 
 class Ujian_m extends Core_m
 {
