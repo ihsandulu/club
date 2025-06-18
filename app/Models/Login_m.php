@@ -57,7 +57,7 @@ class Login_m extends Core_m
                 }
             }
         }
-        // dd($data);
+        dd($data);
 
         // echo "ngaco";die;
         if (isset($_POST["user_phone"]) && isset($_POST["user_token"])) {
