@@ -4,7 +4,7 @@ namespace App\Models\transaction;
 
 use App\Models\core_m;
 
-class Ujian_m extends core_m
+class Ujian_m extends Core_m
 {
     public function data()
     {
