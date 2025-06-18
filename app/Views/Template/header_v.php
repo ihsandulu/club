@@ -160,6 +160,7 @@ function hitung_umur($tanggal_lahir)
             margin: 0px;
         }
         .card{padding: 20px 30px 20px 30px;}
+        .bold{font-weight: bold;}
     </style>
 
 
