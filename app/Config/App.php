@@ -16,28 +16,27 @@ class App extends BaseConfig
      *
      * E.g., http://example.com/
      */
-    // public string $baseURL = 'http://localhost:8080/';
-    public string $baseURL;
+    public string $baseURL = 'http://localhost:8080/';
+    /* public string $baseURL;
+    public function __construct()
+    {
+        parent::__construct();
 
-public function __construct()
-{
-    parent::__construct();
+        $host = $_SERVER['HTTP_HOST'] ?? 'localhost';
+        $scheme = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? 'https' : 'http';
 
-    $host = $_SERVER['HTTP_HOST'] ?? 'localhost';
-    $scheme = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? 'https' : 'http';
-
-    if ($host === 'rish.qithy.com') {
-        $this->baseURL = $scheme . '://rish.qithy.com/';
-    } elseif ($host === 'club.qithy.com') {
-        $this->baseURL = $scheme . '://club.qithy.com/';
-    } elseif ($host === 'localhost:81') {
-        // Aplikasi kamu di subfolder "/rish"
-        $this->baseURL = $scheme . '://localhost:81/rish/';
-    } else {
-        // Default fallback
-        $this->baseURL = $scheme . '://' . $host . '/';
-    }
-}
+        if ($host === 'rish.qithy.com') {
+            $this->baseURL = $scheme . '://rish.qithy.com/';
+        } elseif ($host === 'club.qithy.com') {
+            $this->baseURL = $scheme . '://club.qithy.com/';
+        } elseif ($host === 'localhost:81') {
+            // Aplikasi kamu di subfolder "/rish"
+            $this->baseURL = $scheme . '://localhost:81/rish/';
+        } else {
+            // Default fallback
+            $this->baseURL = $scheme . '://' . $host . '/';
+        }
+    } */
 
 
 
