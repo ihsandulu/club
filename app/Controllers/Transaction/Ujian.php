@@ -18,7 +18,7 @@ class Ujian extends BaseController
 
     public function index()
     {
-        $data = new \App\Models\Transaction\ujian_m();
+        $data = new \App\Models\Transaction\Ujian_m();
         $data = $data->data();
         $data["title"]="Ujian";
         return view('Transaction/ujian_v', $data);
